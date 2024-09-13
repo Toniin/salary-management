@@ -14,7 +14,6 @@ Type d'Employé :
 
 +200€ pour manipulation produits dangereux
 
-
 PROGRAMME => Afficher les détails des employés + Salaire moyen
 
 Indépendants = {

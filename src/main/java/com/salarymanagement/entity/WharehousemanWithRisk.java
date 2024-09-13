@@ -1,4 +1,4 @@
-package com.salarymanagement;
+package com.salarymanagement.entity;
 
 public class WharehousemanWithRisk extends Wharehouseman {
     public WharehousemanWithRisk(String lastName, String firstName, int age, String entryDate, int salary) {

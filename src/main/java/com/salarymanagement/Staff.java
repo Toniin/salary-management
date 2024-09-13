@@ -1,26 +1,29 @@
 package com.salarymanagement;
 
+import com.salarymanagement.entity.Person;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Staff {
-    private final List<Employe> listEmployees = new ArrayList<Employe>();
+    private final List<Person> listPerson = new ArrayList<Person>();
     private int SalarySum;
 
-    public void add(Employe employe) {
-        listEmployees.add(employe);
+    public void add(Person person) {
+        listPerson.add(person);
     }
 
     public void displaySalaries() {
-        for (Employe employee : listEmployees) {
-            System.out.println("L'employé " + employee.getLastName() + " " + employee.getFirstName() + " a un salaire de " + employee.getSalary() + " €");
+        for (Person person : listPerson) {
+            person.displaySalary();
         }
     }
 
     public void displayAverageSalary() {
-        for (Employe employee : listEmployees) {
-            this.SalarySum = this.SalarySum + employee.getSalary();
+        for (Person person : listPerson) {
+            this.SalarySum = this.SalarySum + person.getSalary();
         }
-        System.out.println(this.SalarySum / listEmployees.size() + " €");
+
+        System.out.println(this.SalarySum / listPerson.size() + " €");
     }
 }

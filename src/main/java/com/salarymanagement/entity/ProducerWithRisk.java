@@ -1,4 +1,4 @@
-package com.salarymanagement;
+package com.salarymanagement.entity;
 
 public class ProducerWithRisk extends Producer {
     public ProducerWithRisk(String lastName, String firstName, int age, String entryDate, int salary) {
